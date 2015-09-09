@@ -33,6 +33,13 @@
 //    }
 //})(jQuery)
 var gApp = {
+
+    /**
+     * 获取表单的输入框值
+     *
+     * @param ele  表单element
+     * @returns 一个对象{k:v,k:v}
+     */
     getFormParams : function(ele){
         var names=$(ele).find("input");
         var params={},type="";
@@ -46,6 +53,14 @@ var gApp = {
         }
         return params;
     },
+
+    /**
+     * 类似于php中的in_array,一个字符串或数字是否在数组中出现
+     *
+     * @param search
+     * @param array
+     * @returns {boolean}
+     */
     in_array : function(search,array){
         for(var i in array){
             if(array[i]==search){
@@ -53,6 +68,34 @@ var gApp = {
             }
         }
         return false;
+    },
+
+    /**
+     * 让绑定的元素具有返回页面顶端的能力
+     *
+     * @param options = {}
+     */
+    backToTop : function(options){
+        var defaults = {
+            clickEle:'.back-to-top',
+            scrollEle:'html,body',
+            min_height:600,
+            scrollMsec:600
+        };
+
+        $.extend(true,defaults,options);
+
+        $(window).scroll(function(){
+            if( $(window).scrollTop() > defaults.min_height){
+                $(defaults.clickEle).fadeIn(100);
+            }else{
+                $(defaults.clickEle).fadeOut(100);
+            };
+        });
+
+        $(defaults.clickEle).click(
+            function(){$(defaults.scrollEle).animate({scrollTop:0},defaults.scrollMsec);
+        });
     }
 
 };

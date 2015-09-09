@@ -14,7 +14,7 @@
         这样禁用缩放功能后，用户只能滚动屏幕，就能让你的网站看上去更像原生应用的感觉。注意，这种方式不推荐所有网站使用，需看情况而定-->
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">-->
 
-    <title>@yield('title','laravel5')</title>
+    <title>@yield('title','Gavin\'s Blog')</title>
 
     <!-- Bootstrap css-->
     <link href="//apps.bdimg.com/libs/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
@@ -34,11 +34,11 @@
             </div>
             <nav class="collapse navbar-collapse" id="bs-navbar">
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#">主页</a></li>
-                    <li><a href="#">产品</a></li>
-                    <li><a href="#">试用</a></li>
-                    <li><a href="#">帮助</a></li>
-                    <li><a href="#" data-toggle="modal" data-target=".bs-example-modal-sm">登录</a></li>
+                    <li><a href="#">首页</a></li>
+                    <li><a href="#">归档</a></li>
+                    <li><a href="#">关于我</a></li>
+                    <li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>
+                    {{--<li><a href="#" data-toggle="modal" data-target=".bs-example-modal-sm">登录</a></li>--}}
                 </ul>
             </nav>
         </div>
@@ -56,12 +56,17 @@
         </div>
     </footer>
 
+    <div class="back-to-top">
+        <span class="glyphicon glyphicon-triangle-top"></span>
+    </div>
+
     <!-- jquery 使用bootstrap等其他框架,插件必须导入的-->
     <script src="//apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
     <!-- bootstrap的主要js-->
     <script src="//apps.bdimg.com/libs/bootstrap/3.3.4/js/bootstrap.min.js"></script>
     <script src="{{ asset('/js/base/config.js') }}"></script>
     <script src="{{ asset('/js/base/tools.js') }}"></script>
+    <script src="{{ asset('/js/base/app.js') }}"></script>
     <!-- angular的主要js-->
     <!--<script src="//apps.bdimg.com/libs/angular.js/1.4.0-beta.4/angular.min.js"></script> -->
     @section('js')
