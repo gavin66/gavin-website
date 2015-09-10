@@ -3,3 +3,18 @@
  */
 
 gApp.backToTop();
+
+//µ¼º½À¸ËÑË÷¿ò
+$('#navbar-search').on({
+    focus: function() {
+        $('#navbar-search').addClass('navbar-search');
+    },
+    blur: function() {
+        $('#navbar-search').removeClass('navbar-search');
+    }
+});
+$('#navbar-searchicon').click(function(){
+    $('#navbar-search').addClass( 'navbar-search' );
+    $('#navbar-search').focus().select();
+});
+

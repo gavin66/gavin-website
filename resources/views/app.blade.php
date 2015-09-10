@@ -30,14 +30,21 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">FiredMushroom</a>
+                <a class="navbar-brand" href="#">Gavin's Blog</a>
             </div>
             <nav class="collapse navbar-collapse" id="bs-navbar">
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="#">首页</a></li>
                     <li><a href="#">归档</a></li>
                     <li><a href="#">关于我</a></li>
-                    <li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>
+                    <li>
+                        <form class="navbar-form navbar-left" role="search" id="">
+                            <div class="input-group ">
+                                <span class="glyphicon glyphicon-search" id="navbar-searchicon"></span>
+                                <input type="text" class="form-control" placeholder="关键字搜索" id="navbar-search">
+                            </div>
+                        </form>
+                    </li>
                     {{--<li><a href="#" data-toggle="modal" data-target=".bs-example-modal-sm">登录</a></li>--}}
                 </ul>
             </nav>
