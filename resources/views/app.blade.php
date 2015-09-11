@@ -55,15 +55,20 @@
 
     @show
 
-    <footer>
+    <footer id="footer">
         <div class="container">
-            <ul class="list-inline text-center">
-                <li><a href="#">©2015 isgavin.me 备案号:津ICP备15004268号-1</a></li>
-            </ul>
+            <div class="copyright">
+                ©  2013 -
+                {{--©2015 isgavin.me 备案号:津ICP备15004268号-1--}}
+                <span itemprop="copyrightYear">2015</span>
+                <span itemprop="copyrightHolder">Gavin</span>
+
+            </div>
         </div>
     </footer>
 
-    <div class="back-to-top">
+
+    <div class="back-to-top hidden">
         <span class="glyphicon glyphicon-triangle-top"></span>
     </div>
 
