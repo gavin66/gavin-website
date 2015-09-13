@@ -68,7 +68,10 @@
     </footer>
 
 
-    <div class="back-to-top hidden">
+    <div class="sidebarToggle" style="">
+        <span class="glyphicon glyphicon-menu-hamburger"></span>
+    </div>
+    <div class="back-to-top" style="display: none;">
         <span class="glyphicon glyphicon-triangle-top"></span>
     </div>
 

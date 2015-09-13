@@ -80,21 +80,21 @@ var gApp = {
             clickEle:'.back-to-top',
             scrollEle:'html,body',
             min_height:600,
-            scrollMsec:600
+            scrollSpeed:600
         };
 
         $.extend(true,defaults,options);
 
         $(window).scroll(function(){
             if( $(window).scrollTop() > defaults.min_height){
-                $(defaults.clickEle).fadeIn(100);
+                $(defaults.clickEle).fadeIn(500);
             }else{
-                $(defaults.clickEle).fadeOut(100);
+                $(defaults.clickEle).fadeOut(500);
             };
         });
 
         $(defaults.clickEle).click(
-            function(){$(defaults.scrollEle).animate({scrollTop:0},defaults.scrollMsec);
+            function(){$(defaults.scrollEle).animate({scrollTop:0},defaults.scrollSpeed);
         });
     }
 
