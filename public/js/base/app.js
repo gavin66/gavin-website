@@ -18,10 +18,10 @@ $('#navbar-searchicon').click(function(){
     $('#navbar-search').focus().select();
 });
 
-var isSidebar = false;
-$('.sidebarToggle').click(function(){
-    isSidebar?$('#sidebar').removeClass('sidebar-toggle')&&$('#containerContent').removeClass('container-content')
-        :$('#sidebar').addClass('sidebar-toggle')&&$('#containerContent').addClass('container-content');
-
-    isSidebar = !isSidebar;
-});
+//var isSidebar = false;
+//$('.sidebarToggle').click(function(){
+//    isSidebar?$('#sidebar').removeClass('sidebar-toggle')&&$('#containerContent').removeClass('container-content')
+//        :$('#sidebar').addClass('sidebar-toggle')&&$('#containerContent').addClass('container-content');
+//
+//    isSidebar = !isSidebar;
+//});

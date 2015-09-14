@@ -1,7 +1,7 @@
 @extends('app')
 
 @section('content')
-    <div class="container" id="containerContent">
+    <div class="container">
         <div class="content">
             <section class="">
                 <article class="post post-type-normal" itemscope itemtype="" >
@@ -168,14 +168,14 @@
                 <a class="extend next" rel="next" href="/page/2/">»</a>
             </nav>
         </div>
-        <aside id="sidebar" class="sidebar" style="">
+        <aside id="sidebar" class="sidebar" style="" data-status="closed">
             <div class="sidebar-inner">
                 <section class="site-overview">
                     <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person" style="opacity: 1; display: block; transform: translateX(0px);">
                         <img class="site-author-image" src="/images/default_avatar.jpg" alt="WuChong" itemprop="image">
                         <p class="site-author-name" itemprop="name">WuChong</p>
                     </div>
-                    <p class="site-description motion-element" itemprop="description" style="opacity: 1; display: block; transform: translateX(0px);">伍翀的个人技术博客</p>
+                    <p class="site-description motion-element" itemprop="description" style="opacity: 1; display: block; transform: translateX(0px);">我的博客</p>
                     <nav class="site-state motion-element" style="opacity: 1; display: block; transform: translateX(0px);">
                         <div class="site-state-item site-state-posts">
                             <a href="/archives">
@@ -206,23 +206,22 @@
                         </a>
                     </div>
                     <div class="links-of-author motion-element" style="opacity: 1; display: block; transform: translateX(0px);">
-              <span class="links-of-author-item">
-                <a href="https://github.com/wuchong" target="_blank">GitHub</a>
-              </span>
-              <span class="links-of-author-item">
-                <a href="https://twitter.com/jarkwu" target="_blank">Twitter</a>
-              </span>
-              <span class="links-of-author-item">
-                <a href="http://weibo.com/wuchong1014" target="_blank">Weibo</a>
-              </span>
-              <span class="links-of-author-item">
-                <a href="https://www.douban.com/people/wuchong1014" target="_blank">DouBan</a>
-              </span>
-              <span class="links-of-author-item">
-                <a href="http://www.zhihu.com/people/jark" target="_blank">ZhiHu</a>
-              </span>
+                        <span class="links-of-author-item">
+                            <a href="https://github.com/wuchong" target="_blank">GitHub</a>
+                          </span>
+                          <span class="links-of-author-item">
+                            <a href="https://twitter.com/jarkwu" target="_blank">Twitter</a>
+                          </span>
+                          <span class="links-of-author-item">
+                            <a href="http://weibo.com/wuchong1014" target="_blank">Weibo</a>
+                          </span>
+                          <span class="links-of-author-item">
+                            <a href="https://www.douban.com/people/wuchong1014" target="_blank">DouBan</a>
+                          </span>
+                          <span class="links-of-author-item">
+                            <a href="http://www.zhihu.com/people/jark" target="_blank">ZhiHu</a>
+                          </span>
                     </div>
-
                     <div class="cc-license motion-element" itemprop="license" style="opacity: 1; display: block; transform: translateX(0px);">
                         <a href="http://creativecommons.org/licenses/by-nc-sa/4.0" class="cc-opacity" target="_blank">
                             <img src="/images/cc-by-nc-sa.svg" alt="Creative Commons">

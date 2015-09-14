@@ -19,6 +19,8 @@
     <!-- Bootstrap css-->
     <link href="//apps.bdimg.com/libs/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
     <link href="{{ asset('/css/site.css') }}" rel="stylesheet">
+    <link href="{{ asset('/css/sidebar.css') }}" rel="stylesheet">
+
 </head>
 <body>
     <header class="navbar navbar-inverse navbar-fixed-top" id="top" role="navigation">
@@ -68,7 +70,7 @@
     </footer>
 
 
-    <div class="sidebarToggle" style="">
+    <div class="sidebar-toggle">
         <span class="glyphicon glyphicon-menu-hamburger"></span>
     </div>
     <div class="back-to-top" style="display: none;">
@@ -82,6 +84,7 @@
     <script src="{{ asset('/js/base/config.js') }}"></script>
     <script src="{{ asset('/js/base/tools.js') }}"></script>
     <script src="{{ asset('/js/base/app.js') }}"></script>
+    <script src="{{ asset('/js/base/sidebar.js') }}"></script>
     <!-- angular的主要js-->
     <!--<script src="//apps.bdimg.com/libs/angular.js/1.4.0-beta.4/angular.min.js"></script> -->
     @section('js')
