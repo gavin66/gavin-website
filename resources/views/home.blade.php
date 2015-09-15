@@ -168,15 +168,15 @@
                 <a class="extend next" rel="next" href="/page/2/">»</a>
             </nav>
         </div>
-        <aside id="sidebar" class="sidebar" style="" data-status="closed">
+        <aside id="sidebar" class="sidebar" data-status="closed">
             <div class="sidebar-inner">
                 <section class="site-overview">
-                    <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person" style="opacity: 1; display: block; transform: translateX(0px);">
-                        <img class="site-author-image" src="/images/default_avatar.jpg" alt="WuChong" itemprop="image">
-                        <p class="site-author-name" itemprop="name">WuChong</p>
+                    <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+                        <img class="img-responsive img-thumbnail" src="{{asset('/img/portrait.jpg')}}" alt="Gavin" itemprop="portrait">
+                        <p class="site-author-name" itemprop="name">Gavin</p>
                     </div>
-                    <p class="site-description motion-element" itemprop="description" style="opacity: 1; display: block; transform: translateX(0px);">我的博客</p>
-                    <nav class="site-state motion-element" style="opacity: 1; display: block; transform: translateX(0px);">
+                    <p class=" motion-element" itemprop="description" >田宇的个人博客</p>
+                    <nav class=" motion-element" >
                         <div class="site-state-item site-state-posts">
                             <a href="/archives">
                                 <span class="site-state-item-count">49</span>
@@ -190,24 +190,16 @@
                                 <span class="site-state-item-name">分类</span>
                             </a>
                         </div>
-
-                        <div class="site-state-item site-state-tags">
-                            <a href="/tags">
-                                <span class="site-state-item-count">51</span>
-                                <span class="site-state-item-name">标签</span>
-                            </a>
-                        </div>
-
                     </nav>
-                    <div class="feed-link motion-element" style="opacity: 1; display: block; transform: translateX(0px);">
+                    <div class=" motion-element">
                         <a href="/atom.xml" rel="alternate">
                             <i class="menu-item-icon icon-next-feed"></i>
                             RSS
                         </a>
                     </div>
-                    <div class="links-of-author motion-element" style="opacity: 1; display: block; transform: translateX(0px);">
+                    <div class=" motion-element">
                         <span class="links-of-author-item">
-                            <a href="https://github.com/wuchong" target="_blank">GitHub</a>
+                            <a href="https://github.com/gavin66" target="_blank">GitHub</a>
                           </span>
                           <span class="links-of-author-item">
                             <a href="https://twitter.com/jarkwu" target="_blank">Twitter</a>
@@ -221,17 +213,6 @@
                           <span class="links-of-author-item">
                             <a href="http://www.zhihu.com/people/jark" target="_blank">ZhiHu</a>
                           </span>
-                    </div>
-                    <div class="cc-license motion-element" itemprop="license" style="opacity: 1; display: block; transform: translateX(0px);">
-                        <a href="http://creativecommons.org/licenses/by-nc-sa/4.0" class="cc-opacity" target="_blank">
-                            <img src="/images/cc-by-nc-sa.svg" alt="Creative Commons">
-                        </a>
-                    </div>
-                    <div class="links-of-author motion-element" style="opacity: 1; display: block; transform: translateX(0px);">
-                        <p class="site-author-name">Links</p>
-              <span class="links-of-author-item">
-              <a href="http://zipperary.com/" target="_blank">Zippera's Blog</a>
-              </span>
                     </div>
                 </section>
             </div>

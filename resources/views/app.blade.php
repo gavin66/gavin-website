@@ -79,11 +79,17 @@
 
     <!-- jquery 使用bootstrap等其他框架,插件必须导入的-->
     <script src="//apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <!-- velocity 动画切换的jQuery插件-->
+    <script src="//cdn.bootcss.com/velocity/1.2.2/velocity.min.js"></script>
+    {{--<script src="//cdn.bootcss.com/velocity/1.2.2/velocity.ui.min.js"></script>--}}
     <!-- bootstrap的主要js-->
     <script src="//apps.bdimg.com/libs/bootstrap/3.3.4/js/bootstrap.min.js"></script>
     <script src="{{ asset('/js/base/config.js') }}"></script>
     <script src="{{ asset('/js/base/tools.js') }}"></script>
     <script src="{{ asset('/js/base/app.js') }}"></script>
+
+
+
     <script src="{{ asset('/js/base/sidebar.js') }}"></script>
     <!-- angular的主要js-->
     <!--<script src="//apps.bdimg.com/libs/angular.js/1.4.0-beta.4/angular.min.js"></script> -->
