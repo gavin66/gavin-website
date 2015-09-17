@@ -59,7 +59,7 @@
 
     <footer id="footer">
         <div class="container">
-            <div class="copyright">
+            <div class="copyright" itemscope>
                 ©  2013 -
                 {{--©2015 isgavin.me 备案号:津ICP备15004268号-1--}}
                 <span itemprop="copyrightYear">2015</span>
