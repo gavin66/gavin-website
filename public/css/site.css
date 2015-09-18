@@ -2,6 +2,9 @@ body{
     padding-top: 70px;
     background-color: #DDDDDD;
 }
+a:hover{
+    text-decoration: none;
+}
 
 /*²à±ßÀ¸¿ØÖÆÏÔÊ¾Òþ²ØµÄ°´Å¥*/
 .sidebar-toggle{
@@ -24,10 +27,9 @@ body{
 #navbar-searchicon{
     position: absolute;
     z-index: 3;
-    /*padding: 0 5px 0 5px;*/
     top: 9px;
     left: 5px;
-    font-size: 16px;
+    font-size: 1.6rem;
     color: #9d9d9d;
 }
 #navbar-searchicon:hover{
@@ -48,54 +50,3 @@ body{
     width: 200px !important;
     background-color: white !important;
 }
-
-
-
-
-
-
-
-
-
-/*.masthead h1{*/
-    /*font-size: 60px;*/
-/*}*/
-/*.masthead h2{*/
-    /*font-size: 18px;*/
-    /*font-weight: 200;*/
-    /*line-height: 1.25;*/
-/*}*/
-/*@media screen and (min-width: 768px){*/
-    /*.masthead{*/
-        /*padding: 90px 0 110px 0;*/
-    /*}*/
-    /*.masthead h1{*/
-        /*font-size: 90px;*/
-    /*}*/
-    /*.masthead h2{*/
-        /*font-size: 24px;*/
-    /*}*/
-/*}*/
-/*@media screen and (min-width: 992px){*/
-    /*.masthead h1{*/
-        /*font-size: 100px;*/
-    /*}*/
-    /*.masthead h2{*/
-        /*font-size: 30px;*/
-    /*}*/
-/*}*/
-/*.masthead-button-links{*/
-    /*margin-top: 30px;*/
-/*}*/
-
-/*.masthead p{*/
-    /*font-size: 40px;*/
-    /*font-weight: 200;*/
-    /*line-height: 1.25;*/
-/*}*/
-
-/*@media (min-width: 768px) {*/
-    /*.modal-md {*/
-        /*width: 450px;*/
-    /*}*/
-/*}*/

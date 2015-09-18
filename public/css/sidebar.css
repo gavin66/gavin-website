@@ -1,3 +1,8 @@
+::selection{
+    background: #262a30;
+    color: #fff;
+}
+
 #sidebar {
     width: 320px;
     position: fixed;
@@ -7,7 +12,6 @@
     z-index: 23;
     background: #222;
 }
-
 .sidebar-inner{
     text-align: center;
     padding: 20px 10px;
@@ -20,41 +24,36 @@
     padding: 2px;
 }
 .site-overview .author .author-name{
-    margin-top: 5px;
+    margin-top: 0px;
     color: #C4C4C4;
 }
 
 .site-overview .description{
-    font-size: 13px;
     font-size: 1.3rem;
     color: #3C3C3C;
 }
 
 .site-overview .state .state-item{
     display: inline-block;
-    padding: 0 1.5rem;
+    padding: 0 15px;
 }
 .site-overview .state .state-item:first-child{
-    border-right: 0.1rem solid #333;
+    border-right: 1px solid #333;
 }
 .site-overview .state .state-item span{
     display: block;
 }
 .site-overview .state .state-item .state-item-count{
-    font-size: 18px;
     font-size: 1.8rem;
 }
 .site-overview .state .state-item .state-item-name{
-    font-size: 13px;
     font-size: 1.3rem;
 }
 
 .site-overview .rss{
     margin-top: 20px;
-    margin-top: 2rem;
 }
 .site-overview .contact{
-    margin-top: 20px;
     margin-top: 2rem;
 }
 
@@ -62,10 +61,29 @@
     background-color: white;
     padding: 15px;
     border-left: solid 10px #ccc;
-    /*border-bottom: solid 1px #ccc;*/
+    border-radius: 4px;
     margin-bottom: 5px;
     transition: border .2s ease-in;
 }
 .bulletin:hover{
     border-color: #E77E23;
+}
+.bulletin .bulletin-body .description{
+    text-align: justify;
+}
+
+.paging{
+    text-align: center;
+    background-color: white;
+    border-radius: 4px;
+    font-size: 1.8rem;
+}
+.paging a,.paging span.page-number{
+    display: inline-block;
+    padding: 10px 20px;
+}
+.paging a:hover{
+    border-radius: 4px;
+    background-color: #CCCCCC;
+    color: #EA6753;
 }
