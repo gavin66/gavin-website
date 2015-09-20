@@ -5,6 +5,10 @@ body{
 a:hover{
     text-decoration: none;
 }
+::selection{
+    background: #262a30;
+    color: #fff;
+}
 
 /*侧边栏控制显示隐藏的按钮*/
 .sidebar-toggle{
@@ -24,6 +28,7 @@ a:hover{
     color: #46b8da;
 }
 
+/*导航栏搜索框样式*/
 #navbar-searchicon{
     position: absolute;
     z-index: 3;
@@ -49,4 +54,37 @@ a:hover{
 .navbar-search{
     width: 200px !important;
     background-color: white !important;
+}
+
+/*文章简报样式*/
+.bulletin{
+    background-color: white;
+    padding: 15px;
+    border-left: solid 10px #ccc;
+    border-radius: 4px;
+    margin-bottom: 5px;
+    transition: border .2s ease-in;
+}
+.bulletin:hover{
+    border-color: #E77E23;
+}
+.bulletin .bulletin-body .description{
+    text-align: justify;
+}
+
+/*分页样式*/
+.paging{
+    text-align: center;
+    background-color: white;
+    border-radius: 4px;
+    font-size: 1.8rem;
+}
+.paging a,.paging span.page-number{
+    display: inline-block;
+    padding: 10px 20px;
+}
+.paging a:hover{
+    border-radius: 4px;
+    background-color: #CCCCCC;
+    color: #EA6753;
 }

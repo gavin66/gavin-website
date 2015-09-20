@@ -1,7 +1,4 @@
-::selection{
-    background: #262a30;
-    color: #fff;
-}
+
 
 #sidebar {
     width: 320px;
@@ -57,33 +54,3 @@
     margin-top: 2rem;
 }
 
-.bulletin{
-    background-color: white;
-    padding: 15px;
-    border-left: solid 10px #ccc;
-    border-radius: 4px;
-    margin-bottom: 5px;
-    transition: border .2s ease-in;
-}
-.bulletin:hover{
-    border-color: #E77E23;
-}
-.bulletin .bulletin-body .description{
-    text-align: justify;
-}
-
-.paging{
-    text-align: center;
-    background-color: white;
-    border-radius: 4px;
-    font-size: 1.8rem;
-}
-.paging a,.paging span.page-number{
-    display: inline-block;
-    padding: 10px 20px;
-}
-.paging a:hover{
-    border-radius: 4px;
-    background-color: #CCCCCC;
-    color: #EA6753;
-}

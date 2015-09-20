@@ -14,7 +14,8 @@
                         </div>
                     </header>
                     <div class="bulletin-body">
-                        <p class="description" itemprop="description"> HBase经过七年发展，终于在今年2月底，发布了 1.0.0 版本。这个版本提供了一些让人激动的功能，
+                        <p class="description" itemprop="description">
+                            HBase经过七年发展，终于在今年2月底，发布了 1.0.0 版本。这个版本提供了一些让人激动的功能，
                             并且，在不牺牲稳定性的前提下，引入了新的API。虽然 1.0.0 兼容旧版本的 API，不过还是应该尽早地来熟悉下新版API。
                             并且了解下如何与当下正红的 Spark 结合，进行数据的写入与读取。鉴于国内外有关 HBase 1.0.0 新 API 的资料甚少，故作此文。
                             本文将分两部分介绍，第一部分讲解使用 HBase 新版 API 进行 CRUD 基本操作；
@@ -26,9 +27,7 @@
                             第二部分讲解如何将 Spark 内的 RDDs 写入 HBase 的表中，反之，HBase 中的表又是如何以 RDDs 形式加载进 Spark 内的。
                         </p>
                         <div class="bulletin-link-full">
-                            <span>
-                                <a class="" href="" rel="contents">阅读全文 »</a>
-                            </span>
+                            <a class="" href="" rel="contents">阅读全文 »</a>
                         </div>
                     </div>
                 </article>
