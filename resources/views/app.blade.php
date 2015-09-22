@@ -17,11 +17,14 @@
     <title>@yield('title','Gavin\'s Blog')</title>
 
     <!-- Bootstrap css-->
-    <link href="//apps.bdimg.com/libs/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
+    <link href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+    <link href="//cdn.bootcss.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="{{ asset('/css/site.css') }}" rel="stylesheet">
     <link href="{{ asset('/css/sidebar.css') }}" rel="stylesheet">
 
+    @section('css')
 
+    @show
 
 </head>
 <body>
@@ -80,16 +83,17 @@
     </div>
 
     <!-- jquery 使用bootstrap等其他框架,插件必须导入的-->
-    <script src="//apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="//cdn.bootcss.com/jquery/2.1.4/jquery.min.js"></script>
+    <!-- bootstrap的主要js-->
+    <script src="//cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <!-- velocity 动画切换的jQuery插件-->
     <script src="//cdn.bootcss.com/velocity/1.2.2/velocity.min.js"></script>
     {{--<script src="//cdn.bootcss.com/velocity/1.2.2/velocity.ui.min.js"></script>--}}
-    <!-- bootstrap的主要js-->
-    <script src="//apps.bdimg.com/libs/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-    <script src="{{ asset('/js/lib/config.js') }}"></script>
-    <script src="{{ asset('/js/lib/tools.js') }}"></script>
-    <script src="{{ asset('/js/lib/app.js') }}"></script>
-    <script src="{{ asset('/js/lib/sidebar.js') }}"></script>
+
+    <script src="{{ asset('/js/base/config.js') }}"></script>
+    <script src="{{ asset('/js/base/tools.js') }}"></script>
+    <script src="{{ asset('/js/base/app.js') }}"></script>
+    <script src="{{ asset('/js/base/sidebar.js') }}"></script>
     <!-- angular的主要js-->
     <!--<script src="//apps.bdimg.com/libs/angular.js/1.4.0-beta.4/angular.min.js"></script> -->
     @section('js')
