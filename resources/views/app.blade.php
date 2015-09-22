@@ -21,6 +21,8 @@
     <link href="{{ asset('/css/site.css') }}" rel="stylesheet">
     <link href="{{ asset('/css/sidebar.css') }}" rel="stylesheet">
 
+
+
 </head>
 <body>
     <header class="navbar navbar-inverse navbar-fixed-top" id="top" role="navigation">
@@ -84,10 +86,10 @@
     {{--<script src="//cdn.bootcss.com/velocity/1.2.2/velocity.ui.min.js"></script>--}}
     <!-- bootstrap的主要js-->
     <script src="//apps.bdimg.com/libs/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-    <script src="{{ asset('/js/base/config.js') }}"></script>
-    <script src="{{ asset('/js/base/tools.js') }}"></script>
-    <script src="{{ asset('/js/base/app.js') }}"></script>
-    <script src="{{ asset('/js/base/sidebar.js') }}"></script>
+    <script src="{{ asset('/js/lib/config.js') }}"></script>
+    <script src="{{ asset('/js/lib/tools.js') }}"></script>
+    <script src="{{ asset('/js/lib/app.js') }}"></script>
+    <script src="{{ asset('/js/lib/sidebar.js') }}"></script>
     <!-- angular的主要js-->
     <!--<script src="//apps.bdimg.com/libs/angular.js/1.4.0-beta.4/angular.min.js"></script> -->
     @section('js')

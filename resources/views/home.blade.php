@@ -96,7 +96,7 @@
 
 @section('js')
     <script src="//cdn.bootcss.com/jquery-validate/1.14.0/jquery.validate.min.js"></script>
-    <script src="{{ asset('/js/spare/messages_zh.min.js') }}"></script>
+    <script src="{{ asset('/js/lib/messages_zh.min.js') }}"></script>
     <script type="text/javascript">
         $(function(){
             //初始化表单验证
