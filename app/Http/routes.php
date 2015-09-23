@@ -28,3 +28,7 @@ Route::controllers([
 ]);
 
 Route::get('article',function(){return view('article');});
+
+Route::controllers([
+	'ajax' => 'Ajax\AjaxController'
+]);

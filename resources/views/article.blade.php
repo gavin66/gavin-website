@@ -13,12 +13,31 @@
     <script>
         $(document).ready(function() {
             $('#summernote').summernote({
-                height: 300,                 // set editor height
-                minHeight: null,             // set minimum height of editor
-                maxHeight: null,             // set maximum height of editor
-                focus: true,                 // set focus to editable area after initializing summernote
+                height: 300,
+                minHeight: null,
+                maxHeight: null,
+                focus: true,
+                onImageUpload:function(files, editor, welEditable){
+                    sendFile(files[0],editor,welEditable);
+                }
             });
         });
+
+        function sendFile(file,editor,welEditable) {
+            var data = new FormData();
+            data.append("file", file);
+            $.ajax({
+                data: data,
+                type: "POST",
+                url: "/ajax/saveimage",
+                cache: false,
+                contentType: false,
+                processData: false,
+                success: function(url) {
+                    editor.insertImage(welEditable, url);
+                }
+            });
+        }
 
     </script>
 @stop
