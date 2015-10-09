@@ -11,24 +11,11 @@
 |
 */
 
-//Route::get('/', 'WelcomeController@index');
-//
-//Route::get('home', 'HomeController@index');
-//
-//Route::controllers([
-//	'auth' => 'Auth\AuthController',
-//	'password' => 'Auth\PasswordController',
-//]);
-
 Route::get('/','EntryController@index');
+Route::get('article',function(){return view('article');});
 
 Route::controllers([
 	'auth' => 'Auth\AuthController',
 	'password' => 'Auth\PasswordController',
-]);
-
-Route::get('article',function(){return view('article');});
-
-Route::controllers([
 	'ajax' => 'Ajax\AjaxController'
 ]);
