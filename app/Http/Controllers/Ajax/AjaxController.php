@@ -35,4 +35,6 @@ class AjaxController extends Controller {
         $this->middleware('guest', ['except' => 'getLogout']);
     }
 
+//    public function postSaveImage
+
 }
