@@ -4,6 +4,7 @@ use App\Http\Controllers\Controller;
 use Illuminate\Contracts\Auth\Guard;
 use Illuminate\Contracts\Auth\Registrar;
 use Illuminate\Foundation\Auth\AuthenticatesAndRegistersUsers;
+use Illuminate\Http\Request;
 
 class AjaxController extends Controller {
 
@@ -35,6 +36,16 @@ class AjaxController extends Controller {
         $this->middleware('guest', ['except' => 'getLogout']);
     }
 
-//    public function postSaveImage
+    public function postSaveImage(Request $request){
+        $image = $request->file('image');
+        if($image->isValid()){
+            $destinationPath = './upload/summernote/'.date('Y-m').'/';
+            $filename = uniqid().'.'.$image->guessClientExtension();
+            $image->move($destinationPath,$filename);
+            echo substr($destinationPath.$filename, 1);
+        }else{
+            echo 'error';
+        }
+    }
 
 }

@@ -25,7 +25,7 @@
 
         function sendFile(file,editor,welEditable) {
             var data = new FormData();
-            data.append("file", file);
+            data.append("image", file);
             $.ajax({
                 url: "/ajax/saveImage",
                 data: data,
