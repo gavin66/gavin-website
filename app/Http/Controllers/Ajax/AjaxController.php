@@ -37,11 +37,11 @@ class AjaxController extends Controller {
 //    }
 
     public function postSaveImage(Request $request){
-        $image = $request->file('image');
-        if($image->isValid()){
+        $file = $request->file('file');
+        if($file->isValid()){
             $destinationPath = './upload/summernote/'.date('Y-m').'/';
-            $filename = uniqid().'.'.$image->guessClientExtension();
-            $image->move($destinationPath,$filename);
+            $filename = uniqid().'.'.$file->guessClientExtension();
+            $file->move($destinationPath,$filename);
             echo substr($destinationPath.$filename, 1);
         }else{
             echo 'error';
