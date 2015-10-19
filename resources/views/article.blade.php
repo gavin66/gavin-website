@@ -25,7 +25,7 @@
                 }
             });
 
-            function sendFile(file,editor,welEditable) {
+            function sendFile(file) {
                 var data = new FormData();
                 data.append("file", file);
                 $.ajax({
@@ -36,7 +36,6 @@
                     contentType: false,
                     processData: false,
                     success: function(url) {
-//                        editor.insertImage(welEditable, url);
                         $('#summernote').summernote('editor.insertImage',url);
                     }
                 });
