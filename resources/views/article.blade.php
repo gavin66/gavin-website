@@ -27,9 +27,9 @@
             var data = new FormData();
             data.append("image", file);
             $.ajax({
-                url: "/ajax/saveImage",
+                url: "ajax/save-image",
                 data: data,
-                method: "POST",
+                method: "post",
                 cache: false,
                 contentType: false,
                 processData: false,

@@ -21,6 +21,7 @@ Route::controllers([
 ]);
 
 
+
 //Route::post('summernote/file',function(){
 //	if(\Request::file('file')){
 //		if (\Request::file('file')->isValid()){
