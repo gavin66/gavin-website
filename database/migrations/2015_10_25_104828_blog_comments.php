@@ -12,14 +12,15 @@ class BlogComments extends Migration {
 	 */
 	public function up()
 	{
-		Schema::table('blog_comments', function(Blueprint $table)
+		Schema::create('blog_comments', function(Blueprint $table)
 		{
-			$table->increments('coid');
+			$table->increments('id');
 			$table->integer('contents_id');//blog_contents 表中的主键cid
 			$table->string('author',32);
 			$table->integer('authorID');
 			$table->string('ip',64);
 			$table->text('comment');
+			$table->timestamps();
 		});
 	}
 

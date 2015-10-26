@@ -12,9 +12,9 @@ class BlogFields extends Migration {
 	 */
 	public function up()
 	{
-		Schema::table('blog_fields', function(Blueprint $table)
+		Schema::create('blog_fields', function(Blueprint $table)
 		{
-			$table->increments('fid');
+			$table->increments('id');
 			$table->string('name',32);
 		});
 	}

@@ -12,12 +12,12 @@ class BlogContents extends Migration {
 	 */
 	public function up()
 	{
-		Schema::table('blog_contents', function(Blueprint $table)
+		Schema::create('blog_contents', function(Blueprint $table)
 		{
-			$table->increments('cid');
+			$table->increments('id');
 			$table->string('title',100);
 			$table->text('content');
-			$table->string('status',20);
+			$table->string('status',20);//publish
 			$table->timestamps();
 		});
 	}
