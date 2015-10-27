@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class BlogComments extends Migration {
+class CreateBlogCommentsTable extends Migration {
 
 	/**
 	 * Run the migrations.
@@ -31,10 +31,7 @@ class BlogComments extends Migration {
 	 */
 	public function down()
 	{
-		Schema::table('blog_comments', function(Blueprint $table)
-		{
-			//
-		});
+		Schema::drop('blog_comments');
 	}
 
 }

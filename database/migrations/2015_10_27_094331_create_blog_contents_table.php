@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class BlogContents extends Migration {
+class CreateBlogContentsTable extends Migration {
 
 	/**
 	 * Run the migrations.
@@ -29,10 +29,7 @@ class BlogContents extends Migration {
 	 */
 	public function down()
 	{
-		Schema::table('blog_contents', function(Blueprint $table)
-		{
-			//
-		});
+		Schema::drop('blog_contents');
 	}
 
 }
