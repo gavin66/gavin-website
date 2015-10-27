@@ -5,8 +5,8 @@
 @stop
 
 @section('content')
-    <button id="fetch" type="button">»ñÈ¡</button>
-    <button id="fill" type="button">Ìî³ä</button>
+    <button id="fetch" type="button">è·å–</button>
+    <button id="fill" type="button">å¡«å……</button>
 
     <div id="summernote"></div>
 @stop
