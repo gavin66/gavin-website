@@ -20,23 +20,4 @@ Route::controllers([
 	'ajax' => 'Ajax\AjaxController'
 ]);
 
-
-
-//Route::post('summernote/file',function(){
-//	if(\Request::file('file')){
-//		if (\Request::file('file')->isValid()){
-//			$destinationPath='./uploads/summernote/'.date('Y-m').'/';
-//			$filename=uniqid().'.'.\Request::file('file')->guessClientExtension();
-//			\Request::file('file')->move($destinationPath,$filename);
-//			//水印处理 使用了laravel image包 intervention/image
-//			if(\Cache::get('config')['web_water_switch']){
-//				$img = \Image::make($destinationPath.$filename);
-//				$img->insert('.'.\Cache::get('config')['web_water_img'], 'bottom-right', 10, 10)->save($destinationPath.$filename);
-//			}
-//			//返回图片地址
-//			echo substr($destinationPath.$filename, 1);
-//		}else{
-//			echo '错误，请重试!';
-//		}
-//	}
-//});
+Route:get('gavin',function(){return view('gavin');});
