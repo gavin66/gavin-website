@@ -4,7 +4,7 @@
 
 gApp.backToTop();
 
-//µ¼º½À¸ËÑË÷¿ò
+//å¯¼èˆªæ æœç´¢æ¡†
 $('#navbar-search').on({
     focus: function() {
         $('#navbar-search').addClass('navbar-search');

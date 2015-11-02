@@ -35,10 +35,10 @@
 var gApp = {
 
     /**
-     * »ñÈ¡±íµ¥µÄÊäÈë¿òÖµ
+     * è·å–è¡¨å•çš„è¾“å…¥æ¡†å€¼
      *
-     * @param ele  ±íµ¥element
-     * @returns Ò»¸ö¶ÔÏó{k:v,k:v}
+     * @param ele  è¡¨å•element
+     * @returns ä¸€ä¸ªå¯¹è±¡{k:v,k:v}
      */
     getFormParams : function(ele){
         var names=$(ele).find("input");
@@ -55,7 +55,7 @@ var gApp = {
     },
 
     /**
-     * ÀàËÆÓÚphpÖĞµÄin_array,Ò»¸ö×Ö·û´®»òÊı×ÖÊÇ·ñÔÚÊı×éÖĞ³öÏÖ
+     * ç±»ä¼¼äºphpä¸­çš„in_array,ä¸€ä¸ªå­—ç¬¦ä¸²æˆ–æ•°å­—æ˜¯å¦åœ¨æ•°ç»„ä¸­å‡ºç°
      *
      * @param search
      * @param array
@@ -71,7 +71,7 @@ var gApp = {
     },
 
     /**
-     * ÈÃ°ó¶¨µÄÔªËØ¾ßÓĞµã»÷·µ»ØÒ³Ãæ¶¥¶ËµÄÄÜÁ¦
+     * è®©ç»‘å®šçš„å…ƒç´ å…·æœ‰ç‚¹å‡»è¿”å›é¡µé¢é¡¶ç«¯çš„èƒ½åŠ›
      *
      * @param options = {}
      */
@@ -95,7 +95,7 @@ var gApp = {
 
         $(defaults.clickEle).click(
             function(){$(defaults.scrollEle).animate({scrollTop:0},defaults.scrollSpeed);
-        });
+            });
     }
 
 };

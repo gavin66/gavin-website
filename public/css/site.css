@@ -10,7 +10,7 @@ a:hover{
     color: #fff;
 }
 
-/*²à±ßÀ¸¿ØÖÆÏÔÊ¾Òş²ØµÄ°´Å¥*/
+/*ä¾§è¾¹æ æ§åˆ¶æ˜¾ç¤ºéšè—çš„æŒ‰é’®*/
 .sidebar-toggle{
     position: fixed;
     z-index: 24;
@@ -19,7 +19,7 @@ a:hover{
     color: #46b8da;
 }
 
-/*·µ»Ø¶¥²ã°´Å¥*/
+/*è¿”å›é¡¶å±‚æŒ‰é’®*/
 .back-to-top{
     position: fixed;
     z-index: 24;
@@ -28,7 +28,7 @@ a:hover{
     color: #46b8da;
 }
 
-/*µ¼º½À¸ËÑË÷¿òÑùÊ½*/
+/*å¯¼èˆªæ æœç´¢æ¡†æ ·å¼*/
 #navbar-searchicon{
     position: absolute;
     z-index: 3;
@@ -56,7 +56,7 @@ a:hover{
     background-color: white !important;
 }
 
-/*ÎÄÕÂ¼ò±¨ÑùÊ½*/
+/*æ–‡ç« ç®€æŠ¥æ ·å¼*/
 .bulletin{
     background-color: white;
     padding: 15px;
@@ -72,7 +72,7 @@ a:hover{
     text-align: justify;
 }
 
-/*·ÖÒ³ÑùÊ½*/
+/*åˆ†é¡µæ ·å¼*/
 .paging{
     text-align: center;
     background-color: white;
