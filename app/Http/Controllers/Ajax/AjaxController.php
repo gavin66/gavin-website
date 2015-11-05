@@ -1,4 +1,5 @@
-<?php namespace App\Http\Controllers\Ajax;
+<?php namespace
+App\Http\Controllers\Ajax;
 
 use App\blog_content;
 use App\Http\Controllers\Controller;
@@ -68,6 +69,10 @@ class AjaxController extends Controller {
 		}
 
 		echo json_encode($return_data);
+	}
+
+	public function  getPage(){
+		return view('test');
 	}
 
 }

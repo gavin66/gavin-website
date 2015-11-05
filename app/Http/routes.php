@@ -20,4 +20,8 @@ Route::controllers([
 	'ajax' => 'Ajax\AjaxController'
 ]);
 
-Route:get('gavin',function(){return view('gavin');});
+Route::get('gavin',function(){return view('gavin');});
+
+Route::controllers([
+	'test'=>'TestController',
+]);
