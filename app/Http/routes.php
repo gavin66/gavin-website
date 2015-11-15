@@ -13,6 +13,7 @@
 
 Route::get('/','EntryController@index');
 Route::get('article',function(){return view('article');});
+Route::get('webinfo',function(){echo '我的天,怎么回事';});
 
 Route::controllers([
 	'auth' => 'Auth\AuthController',
