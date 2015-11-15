@@ -88,3 +88,11 @@ a:hover{
     background-color: #CCCCCC;
     color: #EA6753;
 }
+.copyright,.record{
+    display: inline-block;
+    margin-right: 10px;
+}
+.copyright::after{
+    content: "|";
+    padding-left: 10px;
+}

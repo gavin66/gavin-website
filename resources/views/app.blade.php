@@ -14,7 +14,9 @@
         这样禁用缩放功能后，用户只能滚动屏幕，就能让你的网站看上去更像原生应用的感觉。注意，这种方式不推荐所有网站使用，需看情况而定-->
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">-->
 
-    <title>@yield('title','Gavin\'s Blog')</title>
+{{--    <title>@yield('title','Gavin\'s Blog')</title>--}}
+    <title>@yield('title','理发师')</title>
+
 
     <!-- Bootstrap css-->
     <link href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
@@ -65,11 +67,13 @@
     <footer id="footer">
         <div class="container">
             <div class="copyright" itemscope>
-                ©  2013 -
-                {{--©2015 isgavin.me 备案号:津ICP备15004268号-1--}}
+                ©  2014 -
+                {{--©2015 isgavin.me 备案号:津ICP备15004268号--}}
                 <span itemprop="copyrightYear">2015</span>
-                <span itemprop="copyrightHolder">Gavin</span>
-
+                <a itemprop="copyrightHolder" href="http://www.isgavin.me">Gavin</a>
+            </div>
+            <div class="record">
+                <a href="http://www.miibeian.gov.cn/" target="_blank">津ICP备15004268号</a>
             </div>
         </div>
     </footer>
